@@ -48,7 +48,7 @@ def main():
     money = 1000
     budget = money
 
-    csv_path = 'menu.csv'
+    csv_path = '/home/takatobi002/fukunoie_gacha/menu.csv'
 
     origina_menu = csv_to_list(csv_path)
     menus, budget = first_manu(origina_menu, budget, menus)    
