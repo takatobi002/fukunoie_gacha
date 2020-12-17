@@ -6,11 +6,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def base():
-    return render_template('hello.html')
-
-@app.route('/hello.html')
-def hello():
-    return render_template('hello.html')
+    result_menu = gacha.result_menu()
+    result_amount = gacha.result_amount()
+    return render_template('result.html', result_menu=result_menu, result_amount=result_amount)
 
 @app.route('/result.html')
 def result():

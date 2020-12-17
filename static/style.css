@@ -1,0 +1,42 @@
+body {
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',YuGothic,'Yu Gothic',sans-serif;
+  }
+  
+h1, h2 {
+    margin: 0;
+  }
+  
+.page {
+    margin: 2em auto;
+    width: 35em;
+    border: 5px double black;
+    padding: 1em;
+    background: #eddfc7;
+  }
+  
+.heading {
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+  
+.heading h1 {
+    font-size: 2em;
+    color: #d70002;
+  }
+
+.buttonarea {
+    text-align: center;
+  }
+  
+.btn {
+    display: inline-block;
+    width: 10em;
+    padding: 1em 1em;
+    text-decoration: none;
+    background:#fff;
+    color: black;
+    border: solid 2px black;
+    border-radius: 5px;
+  }

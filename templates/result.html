@@ -1,10 +1,11 @@
 {% extends "layout.html" %}
 {% block content %}
-<image src="static/image/fukunoie.jpg">
 
 <p>{{ result_menu }}</p>
-<p>合計{{ result_amount }}</p>
+<p>合計{{ result_amount }}円</p>
 
-<a href= "hello.html" >もどる</a>
+<div class = "buttonarea">
+    <a href= "result.html" class="btn">ガチャを引く</a>
+</div>
 
 {% endblock %}
