@@ -54,10 +54,3 @@ def calculation():
     menus, budget = more_select(budget, origina_menu, menus)
 
     return menus,money,budget
-
-# def result_menu(menus):
-#     return menus
-
-# def result_amount(money, budget):
-#     total_fee = money - budget
-#     return total_fee
