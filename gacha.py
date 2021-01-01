@@ -41,7 +41,7 @@ def more_select(budget, origina_menu, menus):
     
     return menus, budget
 
-def result_menu():
+def calculation():
     menus = []
 
     money = 1000
@@ -53,23 +53,11 @@ def result_menu():
     menus, budget = first_manu(origina_menu, budget, menus)    
     menus, budget = more_select(budget, origina_menu, menus)
 
-    return menus
+    return menus,money,budget
 
-def result_amount():
-    menus = []
+# def result_menu(menus):
+#     return menus
 
-    money = 1000
-    budget = money
-
-    csv_path = 'menu.csv'
-
-    origina_menu = csv_to_list(csv_path)
-    menus, budget = first_manu(origina_menu, budget, menus)    
-    menus, budget = more_select(budget, origina_menu, menus)
-
-    total_fee = money - budget
-
-    return total_fee
-
-result_menu()
-result_amount()
+# def result_amount(money, budget):
+#     total_fee = money - budget
+#     return total_fee

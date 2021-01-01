@@ -6,14 +6,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def base():
-    result_menu = gacha.result_menu()
-    result_amount = gacha.result_amount()
+    result_menu, money, budget = gacha.calculation()
+    result_amount = money - budget
     return render_template('result.html', result_menu=result_menu, result_amount=result_amount)
 
 @app.route('/result.html')
 def result():
-    result_menu = gacha.result_menu()
-    result_amount = gacha.result_amount()
+    result_menu, money, budget = gacha.calculation()
+    result_amount = money - budget
     return render_template('result.html', result_menu=result_menu, result_amount=result_amount)
 
 if __name__ == "__main__":
