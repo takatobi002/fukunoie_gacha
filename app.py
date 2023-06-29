@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 import os
 import gacha
+# from jinja2 import escape
 
 app = Flask(__name__)
 
